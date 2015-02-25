@@ -25,7 +25,7 @@ if socket.gethostname() == 'godzilla':
 else:
     DEBUG = TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['.foxscotch.us', '127.0.0.1']
+ALLOWED_HOSTS = ['foxscotch.us', '.foxscotch.us', '127.0.0.1']
 
 
 # Application definition
