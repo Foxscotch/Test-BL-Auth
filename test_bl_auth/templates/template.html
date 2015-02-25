@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+    <form action='result/' method='POST'>
+		{%  csrf_token %}
+        <input type='text' placeholder='Blockland Username' name='username'>
+        <input type='submit' value='Send data'>
+	</form><br>
+    <p>If it doesn't work, you might need to connect to the master server in-game and try again.</p>
+</body>
+</html>
