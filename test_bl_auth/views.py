@@ -16,11 +16,6 @@ def give_id(request):
     payload = {'NAME': username, 'IP': ip}
     r = requests.post(url, data=payload)
 
-    """context = RequestContext(request, {
-        'name': request.POST
-    })
-    return render(request, 'result.html', context)"""
-
     if r.text[0] == 'Y':
         id = r.text[4:]
         return HttpResponse(content='Success! Your Blockland ID is ' + id.strip() + '!')
